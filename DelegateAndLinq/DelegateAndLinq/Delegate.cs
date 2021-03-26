@@ -20,7 +20,7 @@ namespace DelegateAndLinq
                     sum += (int)result;
                 }
             });
-            Console.WriteLine(sum);
+            Console.WriteLine($"Sum of two method Sum: {sum}");
         }
 
         public int Sum(int x, int y)
@@ -32,7 +32,7 @@ namespace DelegateAndLinq
         {
             try
             {
-              operation.Invoke();
+                operation.Invoke();
             }
             catch (Exception e)
             {
